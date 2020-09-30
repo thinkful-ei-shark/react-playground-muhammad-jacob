@@ -5,30 +5,30 @@ export default class Bomb extends React.Component {
     super(props);
     this.state = {
       count: 0,
-      words: ['tick', 'tock', 'BOOM!!!!']
+      word: ''
     }
   }
-  callback(){
-    if (this.state.count / 2 === 0) {
-      this.word = this.state.words[0]
+    callback = () => {
+      if (this.state.count / 2 === 0) {
+        this.setState({count:this.state.count+1,word:'tick'})
+      }
+      if (this.state.count / 2 !== 0) {
+        this.setState({count:this.state.count+1,word:'tock'})
+      }
+      if (this.state.count >= 8) {
+        this.setState({count:this.state.count+1,word:'Boom'})
+      }
     }
-    if (this.state.count / 2 !== 0) {
-      this.word = this.state.words[1]
+    componentDidMount(){
+      this.interval = setInterval(() => { this.callback()}, 1000 )
     }
-    if (this.state.count >= 8) {
-      this.word = this.state.words[2]
-    }
-  }
-  componentDidMount(){
-    this.interval = setInterval(() => {this.callback, 1000})
-  }
 
-  render() {
-    return (
-      <div>
-        <p>Oh No!</p>
-        <p>`{this.word}`</p>
-      </div>
-    )
+    render() {
+      return (
+        <div>
+          <p>Oh No!</p>
+          <p>`{this.state.word}`</p>
+        </div>
+      )
+    }
   }
-}
