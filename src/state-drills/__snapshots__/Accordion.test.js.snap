@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion Component should render empty with no supplied sections prop 1`] = `<ul />`;
+
+exports[`Accordion Component should render expanded of the last button that was clicked 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <button
+      index={0}
+      key="0"
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+  </li>
+  <li
+    key="1"
+  >
+    <button
+      index={1}
+      key="1"
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+  </li>
+  <li
+    key="2"
+  >
+    <button
+      index={2}
+      key="2"
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Accordion Component should render first button expanded 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <button
+      index={0}
+      key="0"
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+  </li>
+  <li
+    key="1"
+  >
+    <button
+      index={1}
+      key="1"
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+  </li>
+  <li
+    key="2"
+  >
+    <button
+      index={2}
+      key="2"
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Accordion Component should render just the buttons, none expanded 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <button
+      index={0}
+      key="0"
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+  </li>
+  <li
+    key="1"
+  >
+    <button
+      index={1}
+      key="1"
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+  </li>
+  <li
+    key="2"
+  >
+    <button
+      index={2}
+      key="2"
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+  </li>
+</ul>
+`;
