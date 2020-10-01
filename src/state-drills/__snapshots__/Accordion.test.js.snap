@@ -8,7 +8,6 @@ exports[`Accordion Component should render expanded of the last button that was 
     key="0"
   >
     <button
-      index={0}
       key="0"
       onClick={[Function]}
     >
@@ -19,7 +18,6 @@ exports[`Accordion Component should render expanded of the last button that was 
     key="1"
   >
     <button
-      index={1}
       key="1"
       onClick={[Function]}
     >
@@ -30,12 +28,14 @@ exports[`Accordion Component should render expanded of the last button that was 
     key="2"
   >
     <button
-      index={2}
       key="2"
       onClick={[Function]}
     >
       Section 3
     </button>
+    <p>
+      Animi amet cumque sint cupiditate officia ab voluptatibus libero optio et?
+    </p>
   </li>
 </ul>
 `;
@@ -46,32 +46,29 @@ exports[`Accordion Component should render first button expanded 1`] = `
     key="0"
   >
     <button
-      index={0}
       key="0"
       onClick={[Function]}
     >
       Section 1
     </button>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
   </li>
   <li
     key="1"
   >
     <button
-      index={1}
       key="1"
       onClick={[Function]}
     >
       Section 2
     </button>
+    <p>
+      Cupiditate tenetur aliquam necessitatibus id distinctio quas nihil ipsam nisi modi!
+    </p>
   </li>
   <li
     key="2"
   >
     <button
-      index={2}
       key="2"
       onClick={[Function]}
     >
@@ -87,7 +84,6 @@ exports[`Accordion Component should render just the buttons, none expanded 1`] =
     key="0"
   >
     <button
-      index={0}
       key="0"
       onClick={[Function]}
     >
@@ -98,7 +94,6 @@ exports[`Accordion Component should render just the buttons, none expanded 1`] =
     key="1"
   >
     <button
-      index={1}
       key="1"
       onClick={[Function]}
     >
@@ -109,7 +104,6 @@ exports[`Accordion Component should render just the buttons, none expanded 1`] =
     key="2"
   >
     <button
-      index={2}
       key="2"
       onClick={[Function]}
     >

@@ -5,10 +5,10 @@ import React, { useState } from 'react';
 export default function Accordion(props) {
   const [buttonClickedIndex, setButtonClickedIndex] = useState(null);
 
-  let toggleButton = (e={currentTarget:{getAttribute:()=>0}}) => {
-    buttonClickedIndex !== null && buttonClickedIndex === Number(e.currentTarget.getAttribute('index'))
+  let toggleButton = (index) => {
+    buttonClickedIndex !== null && buttonClickedIndex === index
       ? setButtonClickedIndex(null)
-      : setButtonClickedIndex(Number(e.currentTarget.getAttribute('index')))
+      : setButtonClickedIndex(index)
   }
 
   let renderList = () => {
@@ -24,7 +24,7 @@ export default function Accordion(props) {
 
   let renderButtons = (section, index) => {
     return (
-      <button key={index} index={index} onClick={toggleButton}>{section.title}</button>
+      <button key={index} onClick={()=>toggleButton(index)}>{section.title}</button>
     )
   }
 
